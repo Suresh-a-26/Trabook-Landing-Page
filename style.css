@@ -271,7 +271,7 @@ body {
   background-color: white;
   height: 340px;
 }
-.plan .section3 div .main {
+.plan .section3 div img {
   width: 100%;
   height: 250px;
   margin-bottom: 10px;
@@ -429,16 +429,14 @@ body {
   border-radius: 5px;
   border-color: rgba(248, 106, 11, 0.918);
 }
-.container2 .section1 #placeholder {
+
+.container2 .section1 img {
   position: absolute;
-  left: 640px;
+  right: 0px;
+  top: 10px;
+  height: 90px;
+  width: 80px;
 }
-/* .container2 .section1 img {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 208px;
-} */
 
 .container2 .section2 {
   margin-top: 100px;

@@ -11,37 +11,42 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-h3,
-.nav1,
-.nav2 {
+.heading h3,
+.heading .nav1,
+.heading .nav2 {
   display: inline-block;
 }
-.container .container1 img {
+@media screen and (max-width: 1519px) {
+  .heading .nav2 {
+    display: none;
+  }
+}
+.heading img {
   width: 2%;
   height: 2%;
   position: relative;
   top: 1px;
   margin-right: 150px;
 }
-h3 {
+.heading h3 {
   margin: 10px 0px 20px 0px;
 }
-.nav1 {
+.heading .nav1 {
   padding: 7px;
 }
-.nav1 > span {
+.heading .nav1 > span {
   margin: 0px 10px 0px 10px;
   color: grey;
   font-size: smaller;
 }
-.nav2 {
+.heading .nav2 {
   padding: 10px;
 }
-.nav2 > span {
+.heading .nav2 > span {
   margin: 0px 10px 0px 110px;
   color: orange;
 }
-.nav2 > button {
+.heading .nav2 > button {
   margin: 0px 10px 0px 20px;
   background-color: rgb(248, 106, 11);
   border: rgb(248, 106, 11);
@@ -50,32 +55,51 @@ h3 {
   width: 110px;
   height: 30px;
 }
-.section1 h1 {
+.main .section1 h1 {
   font-size: 50px;
   padding-top: 40px;
   line-height: 50px;
 }
-.container2 {
+
+@media screen and (max-width: 1240px) {
+  .main .section1 h1 {
+    font-size: 30px;
+    padding-top: 40px;
+    line-height: 30px;
+  }
+}
+.main {
   padding-top: 35px;
 }
-.container2 .section2 > img {
+@media screen and (max-width: 1519px) {
+  .main .section1 {
+    margin-left: 250px;
+  }
+}
+.main .section2 > img {
   width: 500px;
   height: 400px;
   padding-top: 30px;
   padding-left: 10px;
 }
-.container2 .section1,
+
+@media screen and (max-width: 1520px) {
+  .main .section2 > img {
+    display: none;
+  }
+}
+.main .section1,
 .container .section2 {
   display: inline-block;
 }
-.section1 .p1 {
+.main .section1 .p1 {
   margin: 30px 20px 10px 0px;
   padding: 12px;
   line-height: 30px;
   color: grey;
 }
 
-.section1 .p2 {
+.main .section1 .p2 {
   color: rgb(248, 106, 11);
   border: 1px solid rgb(248, 106, 11);
   width: 120px;
@@ -83,7 +107,7 @@ h3 {
   padding: 10px 5px 10px 22px;
   margin: 40px 20px 0px 10px;
 }
-.container3 {
+.container1 {
   width: 600px;
   height: 100px;
   border: 0px solid black;
@@ -94,10 +118,10 @@ h3 {
   align-items: center;
 }
 
-.container3 select {
+.container1 select {
   border: 0px;
 }
-.container3 button {
+.container1 button {
   margin: 0px 10px 0px 20px;
   background-color: rgb(248, 106, 11);
   border: rgb(248, 106, 11);
@@ -106,203 +130,203 @@ h3 {
   width: 130px;
   height: 45px;
 }
-.container3 p {
+.container1 p {
   font-size: 10px;
   color: rgba(128, 128, 128, 0.694);
   margin-top: 10px;
 }
-.container3 {
+.container1 {
   background-color: white;
 }
-.container4 {
+.content1 {
   margin-top: 170px;
 }
-.container4 .section1 {
+.content1 .section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.container4 h2 {
+.content1 h2 {
   font-size: 30px;
 }
-.container4 .section1 p {
+.content1 .section1 p {
   font-size: 12px;
   padding-top: 15px;
   text-align: center;
 }
-.container4 .section2 {
+.content1 .section2 {
   padding-top: 50px;
   display: flex;
   height: 250px;
 }
-.container4 .section2 div {
+.content1 .section2 div {
   margin: 20px;
   border: 0px solid black;
   background-color: white;
   flex-grow: 1;
   flex-basis: 30%;
 }
-.container4 .section2 p {
+.content1 .section2 p {
   margin: 15px 0px 0px 20px;
   color: rgba(128, 128, 128, 0.811);
   font-size: 15px;
 }
-.container4 .section2 div b {
+.content1 .section2 div b {
   margin-left: 20px;
 }
-.container4 .section2 div img {
+.content1 .section2 div img {
   width: 15%;
   height: 20%;
   margin: 25px 0px 25px 20px;
 }
-.container5 {
+.discounts {
   margin-top: 170px;
 }
-.container5 h2 {
+.discounts h2 {
   font-size: 30px;
 }
-.container5 .section1 p {
+.discounts .section1 p {
   font-size: 12px;
   padding-top: 15px;
   text-align: center;
   padding-bottom: 40px;
 }
 
-.container5 .section1 {
+.discounts .section1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
-.container5 .section2 {
+.discounts .section2 {
   display: flex;
   flex-wrap: wrap;
 }
-.container5 .section2 div {
+.discounts .section2 div {
   margin: 10px;
   border: 0px solid black;
   background-color: white;
 }
-.container5 .section2 .main {
+.discounts .section2 .main {
   width: 100%;
   height: 220px;
   border-radius: 10px;
 }
-.container5 .section2 .star {
+.discounts .section2 .star {
   width: 20px;
   height: 15px;
   margin-left: 103px;
 }
-.container5 .section2 .small-location {
+.discounts .section2 .small-location {
   width: 15px;
   height: 17px;
   margin-right: 5px;
   margin-top: 9px;
 }
-.container5 .section3 img {
+.discounts .section3 img {
   width: 30px;
   height: 30px;
   margin-top: 35px;
 }
-.container5 .section3 .img1 {
+.discounts .section3 .img1 {
   margin-top: 20px;
   padding-left: 420px;
 }
-.container5 .section3 .img2 {
+.discounts .section3 .img2 {
   padding-left: 10px;
 }
-.container6 {
+.plan {
   margin-top: 100px;
 }
-.container6 .section1 {
+.plan .section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container6 .section1 h2 {
+.plan .section1 h2 {
   font-size: 30px;
 }
-.container6 .section1 p {
+.plan .section1 p {
   font-size: 12px;
   text-align: center;
   padding: 25px 0px 10px 0px;
   line-height: 23px;
 }
 
-.container6 .section2 img {
+.plan .section2 img {
   width: 30px;
   height: 30px;
   position: relative;
   left: 835px;
   margin-bottom: 10px;
 }
-.container6 .section3 {
+.plan .section3 {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
-.container6 .section3 div {
+.plan .section3 div {
   flex: 1;
   margin: 10px;
   background-color: white;
   height: 340px;
 }
-.container6 .section3 div .main {
+.plan .section3 div .main {
   width: 100%;
   height: 250px;
   margin-bottom: 10px;
   border-radius: 13px;
 }
-.container6 .section3 div .arrow {
+.plan .section3 div .arrow {
   width: 12px;
   height: 12px;
   margin-top: 10px;
 }
-.container6 .section3 div .star {
+.plan .section3 div .star {
   width: 15px;
   height: 12px;
 }
-.container7 {
+.article {
   margin-top: 100px;
   display: flex;
   background-color: rgba(162, 130, 238, 0.046);
 }
-.container7 .section1 {
+.article .section1 {
   width: 40%;
   height: 300px;
   border: 0px solid black;
   padding-right: 50px;
 }
-.container7 .section2 {
+.article .section2 {
   width: 60%;
   height: 300px;
   border: 0px solid black;
 }
-.container7 .section1 h2 {
+.article .section1 h2 {
   font-size: 40px;
   padding: 0px;
   margin-bottom: 25px;
 }
-.container7 .section1 p {
+.article .section1 p {
   font-size: 15px;
   color: rgba(128, 128, 128, 0.694);
   margin-bottom: 25px;
 }
-.container7 .section1 img {
+.article .section1 img {
   width: 25px;
   height: 25px;
 }
-.container7 .section2 img {
+.article .section2 img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   position: absolute;
 }
-.container7 .section2 {
+.article .section2 {
   position: relative;
   z-index: 2;
 }
-.container7 .section2 .div1 {
+.article .section2 .div1 {
   position: absolute;
   top: 30px;
   left: 40px;
@@ -310,7 +334,7 @@ h3 {
   background-color: white;
   z-index: -1;
 }
-.container7 .section2 .div2 {
+.article .section2 .div2 {
   position: absolute;
   top: 100px;
   left: 90px;
@@ -320,62 +344,62 @@ h3 {
   z-index: -1;
   background-color: rgba(119, 136, 153, 0.059);
 }
-.container8 {
+.latest-blog {
   margin-top: 100px;
 }
-.container8 h2 {
+.latest-blog h2 {
   font-size: 30px;
   text-align: center;
 }
-.container8 .section2 {
+.latest-blog .section2 {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
 }
 
-.container8 .section2 div {
+.latest-blog .section2 div {
   margin: 10px;
   border: 0px solid black;
   background-color: white;
   flex: 1;
 }
-.container8 .section2 p {
+.latest-blog .section2 p {
   padding: 15px 0px 10px 0px;
   font-size: 12px;
   color: rgba(128, 128, 128, 0.694);
 }
-.container8 .section2 img {
+.latest-blog .section2 img {
   margin: 0px 0px 10px 0px;
   width: 100%;
   height: 240px;
   border-radius: 15px;
 }
-.container8 .section2 b {
+.latest-blog .section2 b {
   font-size: 14px;
 }
-.container8 .section3 .grey-dot {
+.latest-blog .section3 .grey-dot {
   width: 11px;
   height: 11px;
 }
-.container8 .section3 .orange-dot {
+.latest-blog .section3 .orange-dot {
   width: 15px;
   height: 14px;
 }
-.container8 .section3 {
+.latest-blog .section3 {
   text-align: center;
   margin-top: 15px;
 }
-.container9 {
+.container2 {
   margin-top: 120px;
 }
-.container9 .section1 {
+.container2 .section1 {
   width: 100%;
   height: 320px;
   background-color: rgba(248, 106, 11, 0.918);
   border-radius: 10px;
   position: relative;
 }
-.container9 .section1 h2 {
+.container2 .section1 h2 {
   font-size: 40px;
   color: white;
   line-height: 45px;
@@ -385,7 +409,7 @@ h3 {
   font-weight: bolder;
   text-align: center;
 }
-.container9 .section1 input {
+.container2 .section1 input {
   width: 60%;
   height: 45px;
   position: absolute;
@@ -394,7 +418,7 @@ h3 {
   border-radius: 8px;
   border-color: white;
 }
-.container9 .section1 button {
+.container2 .section1 button {
   color: white;
   height: 30px;
   background-color: rgba(248, 106, 11, 0.918);
@@ -405,28 +429,28 @@ h3 {
   border-radius: 5px;
   border-color: rgba(248, 106, 11, 0.918);
 }
-.container9 .section1 #placeholder {
+.container2 .section1 #placeholder {
   position: absolute;
   left: 640px;
 }
-/* .container9 .section1 img {
+/* .container2 .section1 img {
   width: 20px;
   height: 20px;
   position: absolute;
   top: 208px;
 } */
 
-.container9 .section2 {
+.container2 .section2 {
   margin-top: 100px;
   display: flex;
 }
-.container9 .section2 .div1 {
+.container2 .section2 .div1 {
   width: 50%;
 }
-.container9 .section2 .div2 {
+.container2 .section2 .div2 {
   width: 50%;
 }
-.container9 .section2 .main {
+.container2 .section2 .main {
   width: 15px;
   height: 15px;
   position: relative;
@@ -434,35 +458,35 @@ h3 {
   margin-right: 150px;
   padding-left: 5px;
 }
-.container9 .section2 .facebook {
+.container2 .section2 .facebook {
   width: 40px;
   height: 40px;
   margin-right: 5px;
 }
-.container9 .section2 .insta {
+.container2 .section2 .insta {
   width: 40px;
   height: 40px;
   margin-right: 5px;
 }
-.container9 .section2 .twitter {
+.container2 .section2 .twitter {
   width: 40px;
   height: 40px;
 }
-.container9 .section2 .div2 {
+.container2 .section2 .div2 {
   display: flex;
   justify-content: space-between;
 }
-.container9 .section2 .div2 p {
+.container2 .section2 .div2 p {
   margin-top: 20px;
 }
-.container9 .section2 .div2 .article1 span {
+.container2 .section2 .div2 .article1 span {
   line-height: 35px;
 }
 hr {
   margin-top: 35px;
   margin-bottom: 30px;
 }
-.container10 {
+.footer {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
